@@ -3,16 +3,18 @@
 Personal portfolio hosted on **Amazon S3** and distributed globally via **Amazon CloudFront**.  
 Demonstrates static site hosting, CDN configuration, and cost-efficient AWS architecture.
 
-## Architecture
-User → CloudFront (HTTPS) → S3 Static Website  
-(Optional) Route 53 → Custom Domain
+## 🌐 Live Website
+[https://ogbemileke.click](https://ogbemileke.click)
 
-## Services Used
-- Amazon S3 (Static Website Hosting)
-- Amazon CloudFront (Content Delivery Network)
-- AWS IAM (Security & Access)
-- Amazon Route 53 (Optional Domain)
+## 🧱 Architecture Diagram
+User → CloudFront (HTTPS) → S3 Static Website → Route 53 (Custom Domain)
 
-## Local Preview
-```bash
-python -m http.server 8000
+## ⚙️ AWS Services
+- Amazon S3 — Static Hosting  
+- Amazon CloudFront — Content Delivery Network + TLS  
+- Amazon Route 53 — Custom Domain Mapping  
+- AWS Certificate Manager — Free SSL Certificate
+
+## 👤 Author
+**Gbemileke Tobi Oyeniran**  |  Cloud DevOps Engineer & Analyst  
+📧 oyeniranemmanuel@gmail.com  |  [LinkedIn](https://linkedin.com/in/gbemileke-oyeniran)
