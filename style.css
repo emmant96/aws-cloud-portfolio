@@ -1,18 +1,35 @@
-*{box-sizing:border-box}
-:root{
- --bg:#f8fafc;--fg:#0f172a;--muted:#475569;
- --card:#fff;--border:#e2e8f0;--accent:#2563eb}
-body{margin:0;font-family:system-ui,Segoe UI,Roboto;
- background:var(--bg);color:var(--fg)}
-.container{max-width:960px;margin:0 auto;padding:1.25rem}
-nav{display:flex;justify-content:space-between;align-items:center}
-.brand{font-weight:700;text-decoration:none;color:var(--fg)}
-.links a{margin-left:1rem;text-decoration:none;color:var(--muted)}
-.links a:hover{color:var(--fg)}
-.hero{text-align:center;padding:5rem 0 3rem}
-.btn{background:var(--accent);color:#fff;padding:.75rem 1rem;border-radius:.5rem;text-decoration:none}
-.card{background:var(--card);border:1px solid var(--border);border-radius:.75rem;padding:1.25rem;margin:1rem 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
-.tile{border:1px dashed var(--border);padding:1rem;border-radius:.5rem}
-.link{color:var(--accent);text-decoration:none}
-.foot{text-align:center;color:var(--muted);padding:2rem 0 3rem}
+/* Custom styles for font and background that Tailwind doesn't easily handle */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Light gray background (Tailwind: bg-gray-50) */
+}
+
+/* This class defines the blue gradient background for the header */
+.gradient-bg {
+    /* REINSTATED BLUE GRADIENT FOR HEADER/HERO SECTION */
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.hero-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card-container {
+    /* Pulls content up over the gradient background */
+    margin-top: -3rem; 
+}
+
+.project-tile {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+    /* Adds a lift effect on hover */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

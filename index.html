@@ -1,65 +1,248 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gbemileke Tobi Oyeniran — Cloud DevOps Engineer & Analyst</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="container">
-      <nav>
-        <a class="brand" href="#">Gbemileke Oyeniran</a>
-        <div class="links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-      <section class="hero">
-        <h1>Cloud DevOps Engineer & Data Analyst</h1>
-        <p>Designing resilient infrastructure and data-driven solutions on AWS.</p>
-        <a class="btn" href="mailto:oyeniranemmanuel@gmail.com">Contact Me</a>
-      </section>
-    </header>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic appeal -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <main class="container">
-      <section id="about" class="card">
-        <h2>About</h2>
-        <p>
-          I’m Gbemileke Oyeniran, a results-driven Cloud and Data professional with experience in Python, SQL, AWS, Terraform and Power BI. Currently an MBA candidate at Georgia State University, I combine engineering and analytics to build scalable, data-powered systems.
-        </p>
-      </section>
+    <!-- Header & Navigation (Uses the custom gradient-bg class) -->
+    <div class="gradient-bg">
+        <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center py-4">
+                <a class="text-2xl font-bold tracking-tight text-white hover:text-gray-200 transition" href="#">
+                    G.T. Oyeniran
+                </a>
+                <div class="hidden sm:flex space-x-6 font-medium">
+                    <a class="text-white hover:text-gray-200 transition" href="#about">About</a>
+                    <a class="text-white hover:text-gray-200 transition" href="#skills">Skills</a>
+                    <a class="text-white hover:text-gray-200 transition" href="#projects">Projects</a>
+                    <a class="text-white hover:text-gray-200 transition" href="#contact">Contact</a>
+                </div>
+                <button class="sm:hidden text-white" aria-label="Toggle navigation">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
 
-      <section id="projects" class="card">
-        <h2>Featured Projects</h2>
-        <div class="grid">
-          <article class="tile">
-            <h3>AWS Static Portfolio Hosting</h3>
-            <p>Deployed this site on Amazon S3 with CloudFront for global delivery and HTTPS.</p>
-            <a class="link" href="#">View Code on GitHub</a>
-          </article>
-          <article class="tile">
-            <h3>Serverless Task Tracker API</h3>
-            <p>Lambda + API Gateway + DynamoDB to demonstrate event-driven architecture.</p>
-            <a class="link" href="#">View Repo (coming soon)</a>
-          </article>
-        </div>
-      </section>
+            <!-- Hero Section -->
+            <section class="hero-section text-center">
+                <div class="w-32 h-32 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
+                    <span class="text-4xl font-extrabold text-[#1e3a8a]">GO</span>
+                </div>
+                <h1 class="text-5xl font-extrabold mb-4 tracking-tight">
+                    Cloud DevOps Engineer & Data Analyst
+                </h1>
+                <p class="text-xl font-light text-gray-200 max-w-3xl mx-auto mb-8">
+                    Architecting high-availability cloud infrastructure **(AWS/Terraform)** and deriving strategic insights from data **(Python/SQL)** to drive growth and efficiency.
+                </p>
+                <a class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10 shadow-lg transition duration-150" href="mailto:oyeniranemmanuel@gmail.com">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                    Get In Touch
+                </a>
+            </section>
+        </header>
+    </div>
 
-      <section id="contact" class="card">
-        <h2>Contact</h2>
-        <ul>
-          <li>Email: <a href="mailto:oyeniranemmanuel@gmail.com">oyeniranemmanuel@gmail.com</a></li>
-          <li>LinkedIn: <a href="https://linkedin.com/in/gbemileke-oyeniran">linkedin.com/in/gbemileke-oyeniran</a></li>
-          <li>GitHub: <a href="https://github.com/emmant96">github.com/emmant96</a></li>
-        </ul>
-      </section>
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 card-container">
+        
+        <!-- About Section -->
+        <section id="about" class="bg-white p-8 rounded-xl shadow-2xl mb-12">
+            <h2 class="text-3xl font-bold mb-4 flex items-center text-gray-800">
+                <i data-lucide="user" class="w-6 h-6 mr-3 text-red-600"></i>
+                About Gbemileke
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-lg">
+                I’m Gbemileke Oyeniran, a results-driven Cloud and Data professional with hands-on experience in modern infrastructure, data pipelines, and business intelligence. As an MBA candidate at Georgia State University, I focus on bridging the gap between technical implementation and strategic business value. My expertise covers **Python, SQL, AWS, Terraform, Docker, and Power BI**. I am passionate about leveraging cloud resources to optimize operations and drive data-informed decision-making.
+            </p>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800">
+                <i data-lucide="wrench" class="w-6 h-6 mr-3 text-red-600"></i>
+                Technical Skills
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Skill Category 1: Cloud & DevOps -->
+                <div class="bg-white p-5 rounded-xl shadow-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700 flex items-center">
+                        <i data-lucide="cloud" class="w-5 h-5 mr-2 text-blue-500"></i>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">AWS (EC2, S3, Lambda)</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Terraform</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Kubernetes (K8S)</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">CI/CD Pipeline</span>
+                    </div>
+                </div>
+                <!-- Skill Category 2: Data & Analytics -->
+                <div class="bg-white p-5 rounded-xl shadow-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700 flex items-center">
+                        <i data-lucide="database" class="w-5 h-5 mr-2 text-green-500"></i>
+                        Data & Analytics
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">SQL (Postgres, MySQL)</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">DynamoDB</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Tableau / Power BI</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Data Modeling / BI</span>
+                    </div>
+                </div>
+                <!-- Skill Category 3: Programming -->
+                <div class="bg-white p-5 rounded-xl shadow-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700 flex items-center">
+                        <i data-lucide="code" class="w-5 h-5 mr-2 text-purple-500"></i>
+                        Programming & Scripting
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Python (Pandas, Boto3)</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Bash/Shell</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Boto3</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">JSON/YAML</span>
+                    </div>
+                </div>
+                <!-- Skill Category 4: Education/Other -->
+                <div class="bg-white p-5 rounded-xl shadow-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700 flex items-center">
+                        <i data-lucide="graduation-cap" class="w-5 h-5 mr-2 text-yellow-600"></i>
+                        Education
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full">MBA Candidate (GSU)</span>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full">Business Strategy</span>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full">Requirements Gathering</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800">
+                <i data-lucide="folder-open" class="w-6 h-6 mr-3 text-red-600"></i>
+                Featured Projects
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1: Static Hosting (The one we planned) -->
+                <article class="project-tile bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-gray-900">AWS Static Portfolio Hosting</h3>
+                        <i data-lucide="cloud-lightning" class="w-6 h-6 text-blue-500"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Deployed this high-availability, low-latency portfolio site using serverless infrastructure. This project demonstrates foundational AWS hosting and security.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-sm mb-4">
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">S3</span>
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">CloudFront (CDN)</span>
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">OAC/IAM</span>
+                    </div>
+                    <a class="text-blue-600 hover:text-blue-800 font-medium flex items-center" href="https://github.com/emmant96">
+                        View Code on GitHub
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </article>
+
+                <!-- Project 2: Serverless API (The intermediate one) -->
+                <article class="project-tile bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-gray-900">Serverless Task Tracker API</h3>
+                        <i data-lucide="zap" class="w-6 h-6 text-green-500"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        A full serverless backend demonstrating event-driven architecture, API integration, and NoSQL database management for a simple task tracker application.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-sm mb-4">
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Lambda (Python)</span>
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">API Gateway</span>
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">DynamoDB</span>
+                    </div>
+                    <a class="text-gray-500 font-medium flex items-center" href="#">
+                        Repository (coming soon)
+                        <i data-lucide="code" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </article>
+
+                <!-- Project 3: Data Analytics Pipeline -->
+                <article class="project-tile bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-gray-900">Sales Data ETL Pipeline</h3>
+                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-red-500"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Automated ETL pipeline using Python/Boto3, processing raw sales data, storing it in an AWS database, and visualizing trends in Power BI.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-sm mb-4">
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Python/Pandas</span>
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">AWS RDS/SQL</span>
+                         <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Power BI</span>
+                    </div>
+                    <a class="text-gray-500 font-medium flex items-center" href="#">
+                        Repository (coming soon)
+                        <i data-lucide="code" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-8 rounded-xl shadow-2xl mb-12">
+            <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800">
+                <i data-lucide="phone" class="w-6 h-6 mr-3 text-red-600"></i>
+                Connect With Me
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Contact Item 1: Email -->
+                <a href="mailto:oyeniranemmanuel@gmail.com" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <i data-lucide="send" class="w-6 h-6 text-blue-600 mr-4"></i>
+                    <div>
+                        <p class="font-semibold text-gray-900">Email</p>
+                        <p class="text-sm text-gray-500">oyeniranemmanuel@gmail.com</p>
+                    </div>
+                </a>
+                <!-- Contact Item 2: LinkedIn -->
+                <a target="_blank" href="https://linkedin.com/in/gbemileke-oyeniran" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <i data-lucide="linkedin" class="w-6 h-6 text-blue-800 mr-4"></i>
+                    <div>
+                        <p class="font-semibold text-gray-900">LinkedIn</p>
+                        <p class="text-sm text-gray-500">gbemileke-oyeniran</p>
+                    </div>
+                </a>
+                <!-- Contact Item 3: GitHub -->
+                <a target="_blank" href="https://github.com/emmant96" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                    <i data-lucide="github" class="w-6 h-6 text-gray-800 mr-4"></i>
+                    <div>
+                        <p class="font-semibold text-gray-900">GitHub</p>
+                        <p class="text-sm text-gray-500">emmant96</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="container foot">
-      <small>© <span id="year"></span> Gbemileke Oyeniran — All rights reserved.</small>
-      <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <small>© <span id="year"></span> Gbemileke Oyeniran — Cloud DevOps & Data. Built with Tailwind CSS.</small>
+        </div>
+        <script>
+            // Initialize Lucide icons
+            lucide.createIcons();
+            // Set current year
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
-  </body>
+
+</body>
 </html>
